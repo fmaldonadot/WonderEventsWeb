@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="iso-8859-15"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" 
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<head>
+    <title>Buy Service</title>
+    <link rel="stylesheet" type="text/css" href="../css/index.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+    <script type = "text/javascript" src = "../js/events.js"></script>
+
+    	
+</head>
+
+<body background="../img/event-planning-2.jpg" style="background-size: 250%; " id="top" onload="GetAmounts()">
+    <div class ="autenticate2" id="logout">
+        <button type = "button" onclick="openCart( '../index.html' )" target="_parent" style ="width: 60px;height: 25px; font-size: 12px;">Logout</button>
+    </div>
+    
+    <div class="page_header">
+        <div><a href="../index.html"><img src="../img/Logo.png" id="Logo"/></a></div>
+
+        <div id="TMenu"><a href="../index.html"><img src="../img/company.jpg" style="width: 1000px; border-radius: 50px; box-shadow: 10px 10px 20px;"/></a></div>
+
+        <div class="Nav">
+            <div class="dropdown">
+                <a href="../pages/about_us.html" >About Us</a>
+                <div class="dropdown-content">
+                    <a href="#mission" style="text-shadow: 1px 1px 10px ; " >Mission</a><br /><br />
+                    <a href="#values" style="text-shadow: 1px 1px 10px ; " >Values</a><br /><br />
+                    <a href="#ourserv" style="text-shadow: 1px 1px 10px ; " >Our Services</a>
+                </div>
+            </div>
+            <a href="../pages/our_service.html" style="margin-left: 100px" >Let us help you</a>
+            <a href="../pages/package.html" style="margin-left: 100px" >Packages</a>
+            <a href="../pages/prepare_pack.html" style="margin-left: 100px" >Prepare your Budget</a>
+            <a href="../pages/Contact_us.html" style="margin-left: 100px" >Contact us</a>
+
+        </div>
+        <div><img src="../img/social-media-icons.jpg" width="100px" alt="social_media" usemap="#socialmedia" id="social-media-icons"/></div>
+
+    </div>
+    
+    <div class="page_information" style="margin-top: -180px;">
+        <span style="border-top: 3px dotted black; border-bottom: 3px dotted black; color:black; text-align: center; font-size: 72px; text-shadow: 2px 2px 2px white">Place your Order</span><br />
+        <div class = "buyform">
+            <form>
+                <fieldset>
+                    <center>Credit Card Information:</center><br />
+                    <legend></legend>
+                    <span style="color:red">*</span>Select a Credit Card:
+                    <img src="../img/credit_cards.png" style = "float:right; width: 25%; margin-right: 350px;">                   
+                    <select id="CCardSelect" onchange="" value="Choise...">
+                        <option></option>
+                        <option>Visa</option>
+                        <option>Master Card</option>
+                        <option>American Express</option>
+                    </select> 
+                    <span style="color:red">*</span>Card Number: <input type="text" id="CCNumber" required="yes" maxlength="16" ><br /> 
+                    <span style="color:red">*</span>Expiration Date: <br />
+                        <input id="CCMonth" required="yes" min="1" max="12" type="number" style ="width:45px">                  
+                        <input type="text" id="CCYear" required="yes" maxlength="4" style ="width:70px"><br />
+                    <span style="color:red">*</span>Security Number: <input type="text" id="CCSecNumb" required="yes" maxlength="4" style ="width:45px" ><br />
+
+                    <div id = "CCAmount">
+                        <div>Subtotal: <span id ="CCSubT"></span></div>
+                        <div>Taxes: <span id ="CCTax"></span></div>
+                        <div style="border-top: 1px solid black">Total: <span id ="CCTot"></span></div>
+                    </div>
+                     
+                </fieldset>
+                <fieldset>
+                <center>Billing Address:</center><br />
+                <div style="margin-right: 600px ; height: 130px">
+                    
+                    <span style="color:red">*</span>First Name: <input type="text" id="CCFName" required="yes" maxlength="20" ><br /> 
+                    <span style="color:red">*</span>Last Name: <input type="text" id="CCLName" required="yes" maxlength="20" ><br /> 
+                    <legend></legend>
+                    <span style="color:red">*</span>Country:                   
+                    <select id="CCountry" onchange="show_BSubMenu()" value="Choise...">
+                        <option></option>
+                        <option>Canada</option>
+                        <option>United Estates</option>
+                    </select> 
+                    <div id="CCanada">   
+                        <span style="color:red">*</span>City:                     
+                        <select id= "opt1" value="Choise...">                        
+                            <option></option>
+                            <option>Toronto</option>
+                            <option>Montreal</option>
+                            <option>Quebec City</option>
+                            <option>Gatineau</option>
+                            <option>Halifax</option>
+                        </select>
+                    </div>
+                    <div id="CCUSA">    
+                        <span style="color:red">*</span>City:                   
+                        <select id= "opt2" value="Choise...">                        
+                            <option></option>
+                            <option>New York</option>
+                            <option>Miami</option>
+                            <option>Boston</option>
+                            <option>Atlanta</option>
+                            <option>Chicago</option>
+                        </select>
+                    </div>
+                </div>
+                <div style ="position: absolute; left: 700px; top: 580px">    
+                    Street: <input type="text" id="CCStreet" maxlength="20" ><br /> 
+                    Street 2: <input type="text" id="CCStreet2" maxlength="20" ><br />
+                    <span style="color:red">*</span>Postal/Zip Code: <input type="text" id="CCZip" required="yes" maxlength="6" ><br /> 
+                    <span style="color:red">*</span>Phone Number: <input type="text" id="CPhone" required="yes" maxlength="10" ><br />
+                    
+                     
+                </div></fieldset>  
+
+            </form>
+            <br /><center><button onclick="check_BUYForm_Values()" >Place Your Order</button></center>
+
+        </div>
+
+        
+    </div>
+    
+
+    <div id="footer">
+        <table>
+            <tr>
+                <th style="margin-left:50px;padding-left: 250px; padding-right: 50px">
+                    <div class="footer_text" style="margin-left:50px;border-bottom: 3px dotted yellow">Get in touch<br /></div>
+                    <div style="margin-left:50px;font-size: 13px;color:white; text-shadow: 5px 5px 5px black;">
+                        Collège LaSalle | Montréal<br />
+                        2000, rue Sainte-Catherine Ouest<br />
+                        Montréal (Québec)<br />
+                    </div>
+                    <a target="_blank" href="mailto:info@wonder_events.ca" style="margin-left:50px;font-size: 13px; color:white; text-shadow: 5px 5px 5px black;">info@wonder_events.ca</a><br />
+                    
+                    
+                    
+                </th>
+                <th style="padding-left: 100px; padding-right: 50px">
+                                       
+                    <div class="footer_text" style="border-bottom: 3px dotted yellow">Follow us<br /></div>
+                    <a target="_blank" href="https://www.twitter.com" style="font-size: 13px; color:white; text-shadow: 5px 5px 5px black;">Twitter</a><br />
+                    <a target="_blank" href="https://www.facebook.com" style="font-size: 13px; color:white; text-shadow: 5px 5px 5px black;">Facebook</a><br />
+                    <a target="_blank" href="https://www.instagram.com" style="font-size: 13px; color:white; text-shadow: 5px 5px 5px black;">Instagram</a><br />
+                </th>
+                <th style="padding-left: 100px; padding-right: 50px">
+                      
+                    <ul>
+                        <div class="footer_text" style="center; border-bottom: 3px dotted yellow">Menu<br /></div>
+                        <li><a href="../pages/about_us.html" style="font-size: 13px; color:white; text-shadow: 5px 5px 5px black;">About Us</a></li>
+                        <li><a href="../pages/our_service.html" style="font-size: 13px; color:white; text-shadow: 5px 5px 5px black;">Let us help you</a></li>
+                        <li><a href="../pages/package.html" style="font-size: 13px; color:white; text-shadow: 5px 5px 5px black;">Packages</a></li>
+                        <li><a href="../pages/prepare_pack.html" style="font-size: 13px; color:white; text-shadow: 5px 5px 5px black;">Prepare your Budget</a></li>
+                        <li><a href="../pages/Contact_us.html" style="font-size: 13px; color:white; text-shadow: 5px 5px 5px black;">Contact us</a></li>
+                    </ul>
+                </th>
+            </tr>
+        </table>
+    </div>
+
+  	<map name="socialmedia"> 
+        <area shape="rect" coords="6,5,35,34" alt="Facebook" href="https://www.facebook.com" target="_blank"> 
+        <area shape="rect" coords="37,5,66,34" alt="Twitter" href="https://www.twitter.com" target="_blank"> 
+        <area shape="rect" coords="68,5,97,34" alt="Instagram" href="https://www.instagram.com" target="_blank">
+    </map>
+
+    <map name="OurServiceMap" >
+        <area shape="rect" coords="5,143,148,261" alt="Stage01" onclick= "showEstage(1)" title="Pre-Event planning">
+        <area shape="rect" coords="146,19,237,114" alt="Stage02" onclick= "showEstage(2)" title="Tracking Process"> 
+        <area shape="rect" coords="357,32,504,132" alt="Stage03" onclick= "showEstage(3)" title="Checking Process Progress">
+        <area shape="circle" coords="608,237,77" alt="Stage04" onclick= "showEstage(4)" title="Installing and Supervise Event">
+        <area shape="circle" coords="321,361,51" alt="Stage05" onclick= "showEstage(5)" title="Post-Event analysis">
+    </map>
+
+</body>
+
+</html>

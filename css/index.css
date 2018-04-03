@@ -1,0 +1,372 @@
+#footer {
+    background-image: url("../img/footer02.jpg");
+
+ 	background-size: 700px;	
+    width: 100%;
+    color: white;
+    border-radius: 20px;
+    margin-top: 50px;
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+ 
+}
+#TMenu
+{
+	margin-top: 10px;
+	position:relative;
+	left: -70px;
+	padding-bottom: 10px;
+
+
+}
+#Logo
+{
+	float: left; 
+	width: 150px; 
+	border-radius: 50px;
+	box-shadow: 10px 10px 20px;
+	background-color: transparent;
+	border-radius: 40px;
+
+}
+#slide-picts
+{
+	width: 700px;
+	margin-top:-250px;
+	border-radius: 50px;
+	box-shadow: 10px 10px 20px;
+}
+#Title
+{
+	text-shadow: 1px 1px 10px black;
+	margin-top: 20px;
+	font-size: 50px; 
+	color: darkblue;
+	border-top:2px dotted darkblue; 
+	border-bottom: 2px dotted darkblue;
+}
+#social-media-icons
+{
+	position: absolute; 
+	top:30px; 
+	right: 30px; 
+	mix-blend-mode: multiply;
+}
+
+#Our-service-map
+{	
+
+	margin-left: 30px;
+	border: 1px solid black; 
+	box-shadow: 3px 3px 3px black; 
+	border-radius: 50px;
+
+}
+.mapinfo
+{
+	float:right;
+	margin-right: 40px;
+	margin-top: -390px;
+	box-shadow: 5px 5px 5px black;
+	border-radius: 30px;
+}
+.maptextinfo
+{
+	position:fixed;
+	width: 930px;
+	left: 350px;
+	top: 90px;
+	box-shadow: 5px 5px 5px black;
+	border-radius: 30px;
+	padding: 20px;	
+	font-size: 20px;
+	color: black;
+	text-shadow: 1px 1px 5px white;
+
+}
+.page_header
+{
+	padding-bottom: 70px;
+
+	text-align: center;
+
+}
+.page_information
+{
+	margin-top: 50px;	
+	padding-top: 150px;
+	padding-bottom: 30px;
+	width: 90%;
+	margin-left: 100px;
+	text-align: center;
+}
+.Nav
+{
+	margin-top: 10px;
+	color: #bb4444;
+	font-family: "nimbus-sans", sans-serif;
+	font-size: 20px;
+	line-height: 1;
+	text-shadow: 5px 5px 5px black;
+
+}
+a:link, a:visited
+{
+	color:white;
+}
+.hometable
+{
+	color: darkblue;
+	width: 35%; 
+	text-align: left;
+	font-size: 16px;
+}
+.footer_text
+{
+	text-shadow: 5px 5px 5px black;
+	font-size: 16px; 
+	color:yellow;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content 
+{	
+	margin-top: 5px;
+    display: none;
+    position: absolute;
+    background-color: brown;
+    min-width: 100px;
+    box-shadow: 5px 5px 10px;
+    border-radius: 20px 20px 20px;
+    padding: 12px 16px;
+    z-index: 1;
+    text-align: center;
+    font-size: 16px;
+}
+
+h1
+{
+	text-shadow: 1px 1px 10px black;
+	font-size: 50px;
+	text-align: left;
+	padding: 20px;
+	border-top: 3px dotted black; 
+	border-bottom: 3px dotted black;
+	width: 300px;
+}
+p
+{
+	text-shadow: 1px 1px 0px;
+	mix-blend-mode: multiply;
+	margin-top: -25px;
+	font-size: 20px;
+	text-align: justify;
+}
+
+#event3
+{
+	float:right; 
+	width: 590px; 
+	height: 380px; 
+	mix-blend-mode: multiply;"
+}
+
+.package
+{
+	width: 350px; 
+	height: 157px;
+	margin-right: 20px;
+	margin-top: 20px;
+	box-shadow: 5px 5px 5px black;
+	border-radius: 30px;
+}
+
+#packageinfo
+{
+	box-shadow: 5px 5px 5px black;
+	border-radius: 10px;
+	font-size: 20px;
+}
+
+iframe
+{
+	width: 1000px; 
+	margin-top: 50px;
+	border-color: transparent;
+}
+
+.packtitle
+{
+	border-top: 4px dotted darkblue;
+	border-bottom: 4px dotted darkblue;
+	font-size: 40px;
+	font-family: snellroundhandw01-scrip,cursive;
+	color: darkblue;
+	text-shadow: 2px 2px 2px white;
+
+}
+
+.packsubtitle
+{
+	border-bottom: 4px dotted darkblue;
+	font-size: 22px;
+	font-family: snellroundhandw01-scrip,cursive;
+	color: darkblue;
+	text-shadow: 1px 1px 1px white;
+}
+
+.packcontent
+{
+	font-size: 18px;
+	font-family: snellroundhandw01-scrip,cursive;
+	color: darkblue;
+	text-shadow: 1px 1px 1px white;
+}
+
+button
+{
+	width: 200px;
+	height: 40px;
+	color: white;
+	background-color: darkblue;
+	font-size: 16px;
+	font-family: snellroundhandw01-scrip,cursive;
+	text-shadow: 2px 2px 2px black;
+	border-radius: 20px;
+
+}
+td
+{
+	padding-right: 40px;
+}
+
+.budgetform
+{
+	background-image: url("../img/white-leather-texture.jpg");
+	background-size: 200%;
+	margin-top: 16px;
+	border: 3px solid green;
+	box-shadow: 10px 10px 5px black;
+	width: 500px;
+	text-align: right;
+	font-size: 20px;
+	font-family: snellroundhandw01-scrip,cursive;
+	text-shadow: 1px 1px 1px grey;
+}
+
+.budgettbox
+{
+	font-size: 16px;
+	font-family: snellroundhandw01-scrip,cursive;
+	box-shadow: 1px 1px 1px black;
+	border-radius: 10px;
+}
+#budget_show
+{
+	background-image: url("../img/budget_show.jpg");
+	border: 1px solid black;
+	box-shadow: 10px 10px 5px black;
+	width: 670px;
+	height:530px;
+	position:absolute;
+	left: 650px;
+	top: 280px;
+}
+
+input[type=checkbox]
+{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(1.5); /* IE */
+  -moz-transform: scale(1.5); /* FF */
+  -webkit-transform: scale(1.5); /* Safari and Chrome */
+  -o-transform: scale(1.5); /* Opera */
+  padding: 10px;
+}
+
+#budgetcalc
+{
+	font-size: 20px;
+	text-align: left;
+	margin-left: 20px;
+	font-family: snellroundhandw01-scrip,cursive;
+}
+
+#bill_show
+{
+	background-image: url("../img/Bill_Background.jpg");
+	background-size: 100%;
+	border: 1px solid black;
+	box-shadow: 10px 10px 5px black;
+	width: 670px;
+	height:750px;
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+.money
+{
+	position: absolute;
+	top: 275px;
+	right: 5px;
+
+}
+
+.cash
+{
+	width: 70%;
+}
+.howmany
+{
+	font-size: 18px;
+	font-family: snellroundhandw01-scrip,cursive;
+}
+
+.buyform
+{
+	margin-top: 16px;
+	margin-left: 100px;
+	text-align: right;
+	font-size: 20px;
+	width: 1000px;
+	font-family: snellroundhandw01-scrip,cursive;
+	text-shadow: 1px 1px 1px grey;
+}
+
+#CCAmount
+{
+	position: absolute;
+	bottom: 150px;
+	left: 900px;
+}
+#Confirmation
+{
+	margin-top: 20px;
+	color:black; 
+	text-align:	center; 
+	font-size: 30px; 
+	text-shadow: 2px 2px 2px white;
+}
+
+.autenticate
+{
+	position: absolute;
+	top: 180px;
+	left: 30px;
+	text-align: right;
+	color: white;
+}
+.autenticate2
+{ 
+	position: absolute;
+	top:160px;
+	left: 50px;
+}
+
+#Contact
+{
+	font-size: 20px;
+	margin-top: 20px;
+}

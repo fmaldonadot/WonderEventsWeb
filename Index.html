@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="iso-8859-15"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" 
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<head>
+    <title>Index</title>
+    <link rel="stylesheet" type="text/css" href="./css/index.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+    <script type = "text/javascript" src = "./js/events.js"></script>
+
+</head>
+
+<body background="./img/event-planning-2.jpg" style="background-size: 250%">
+    <div class ="autenticate" id="login">
+        User Name: <input type="text" name="UserName" id="UserName" value="Enter your User Name"><br />
+        Password: <input type="password" name="Pass" id="Pass" ><br />
+        <button type = "button" onclick="authenticate_login()" style ="width: 80px; height: 30px; margin-right: 40px">Login</button>
+    </div>
+    <div class ="autenticate2" id="logout">
+        <button type = "button" onclick="openCart( './index.html' )" target="_parent" style ="width: 60px;height: 25px; font-size: 12px;">Logout</button>
+    </div>
+
+    <div class="page_header">
+        <div><a href="index.html"><img src="./img/Logo.png" id="Logo"/></a></div>
+
+        <div id="TMenu"><img src="./img/company.jpg" style="width: 1000px; border-radius: 50px;box-shadow: 10px 10px 20px;"/></div>
+
+        <div class="Nav">
+            <div class="dropdown">
+                <a href="./pages/about_us.html">About Us</a>
+                <div class="dropdown-content">
+                    <a href="./pages/about_us.html#mission" style="text-shadow: 1px 1px 10px; " >Mission</a><br /><br />
+                    <a href="./pages/about_us.html#values" style="text-shadow: 1px 1px 10px; " >Values</a><br /><br />
+                    <a href="./pages/about_us.html#ourserv" style="text-shadow: 1px 1px 10px; " >Our Services</a>
+                </div>
+            </div>
+            <a href="./pages/our_service.html" style="margin-left: 100px" >Let us help you</a>
+            <a href="./pages/package.html" style="margin-left: 100px" >Packages</a>
+            <a href="./pages/prepare_pack.html" style="margin-left: 100px" >Prepare your Budget</a>
+            <a href="./pages/Contact_us.html" style="margin-left: 100px" >Contact us</a>
+
+        </div>
+        <div><img src="./img/social-media-icons.jpg" width="100px" alt="social_media" usemap="#socialmedia" id="social-media-icons"/></div>
+
+    </div>
+
+    <div class="page_information">
+
+        <div><img src="./img/slide01.jpg" id="slide-picts"/></div>
+        <div>
+            <table><tr>
+                <div id="Title">Who We Are</div>
+                <th class="hometable">We are Boulder-based Event and Wedding Planners who specialize in curating impeccably designed occasions, modern weddings, and events. Our team intrepid connoisseurs of design, allowing us to be the stewards of personalization for every event we create.
+                </th>
+                <th class="hometable">Wonder Events offer a variety of packages to meet your specific wedding planning needs. While the packages range in services offered, each includes consulting with a team of experts who have experience in wedding planning. If there is a package that doesn't quite fit what you're looking for, please contact us for individualized options.
+                </th>
+                <th class="hometable">We strategize, conceptualize, curate, design and develop all concepts to produce extraordinary results. Our expertise include; international events, conferences, product launches, brand activations, company retreats, major public events, concerts, social gatherings, private dinners, galas and fundraisers, weddings, proposals, art exhibitions and unique and custom experiences.
+                </th>
+
+                
+            </tr></table>
+        </div>
+        
+
+    </div>
+
+
+    <div id="footer">
+        <table>
+            <tr>
+                <th style="margin-left:50px;padding-left: 250px; padding-right: 50px">
+                    <div class="footer_text" style="margin-left:50px;border-bottom: 3px dotted yellow">Get in touch<br></div>
+                    <div style="margin-left:50px;font-size: 13px;color:white; text-shadow: 5px 5px 5px black;">
+                        Collège LaSalle | Montréal<br>
+                        2000, rue Sainte-Catherine Ouest<br>
+                        Montréal (Québec)<br>
+                    </div>
+                    <a target="_blank" href="mailto:info@wonder_events.ca" style="margin-left:50px;font-size: 13px; color:white; text-shadow: 5px 5px 5px black;">info@wonder_events.ca</a><br>
+                    
+                    
+                    
+                </th>
+                <th style="padding-left: 100px; padding-right: 50px">
+                                       
+                    <div class="footer_text" style="border-bottom: 3px dotted yellow">Follow us<br /></div>
+                    <a target="_blank" href="https://www.twitter.com" style="font-size: 13px; color:white; text-shadow: 5px 5px 5px black;">Twitter</a><br />
+                    <a target="_blank" href="https://www.facebook.com" style="font-size: 13px; color:white; text-shadow: 5px 5px 5px black;">Facebook</a><br />
+                    <a target="_blank" href="https://www.instagram.com" style="font-size: 13px; color:white; text-shadow: 5px 5px 5px black;">Instagram</a><br />
+                </th>
+                <th style="padding-left: 100px; padding-right: 50px">
+                      
+                    <ul><div id="menufooter" >
+                        <div class="footer_text" style="center; border-bottom: 3px dotted yellow">Menu<br></div>
+                        <li><a href="./pages/about_us.html" style="font-size: 13px; color:white; text-shadow: 5px 5px 5px black;">About Us</a></li>
+                        <li><a href="./pages/our_service.html" style="font-size: 13px; color:white; text-shadow: 5px 5px 5px black;">Let us help you</a></li>
+                        <li><a href="./pages/package.html" style="font-size: 13px; color:white; text-shadow: 5px 5px 5px black;">Packages</a></li>
+                        <li><a href="./pages/prepare_pack.html" style="font-size: 13px; color:white; text-shadow: 5px 5px 5px black;">Prepare your Budget</a></li>
+                        <li><a href="./pages/Contact_us.html" style="font-size: 13px; color:white; text-shadow: 5px 5px 5px black;">Contact us</a></li>
+                    </div></ul>
+                </th>
+            </tr>
+        </table>
+    </div>
+
+  	<map name="socialmedia"> 
+        <area shape="rect" coords="6,5,35,34" alt="Facebook" href="https://www.facebook.com" target="_blank"> 
+        <area shape="rect" coords="37,5,66,34" alt="Twitter" href="https://www.twitter.com" target="_blank"> 
+        <area shape="rect" coords="68,5,97,34" alt="Instagram" href="https://www.instagram.com" target="_blank">
+    </map>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+          $(".Nav").hide();
+        });
+        $(document).ready(function(){
+          $("#logout").hide();
+        });
+        $(document).ready(function(){
+          $("#menufooter").hide();
+        });
+    </script>
+
+</body>
+
+</html>
